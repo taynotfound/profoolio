@@ -1,0 +1,21 @@
+---
+import Section from "../Section.astro";
+import { interests } from "@cv";
+---
+
+<Section title="Interests">
+  <ul class="space-y-2">
+    {interests.map(({ name, keywords }) => (
+      <li>
+        <span class="text-sm font-medium">{name}</span>
+        {keywords && keywords.length > 0 && (
+          <ul class="flex flex-wrap gap-1 mt-1">
+            {keywords.map((keyword) => (
+              <li class="text-xs bg-skin-button-accent/20 text-skin-hue px-2 py-0.5 rounded-full">{keyword}</li>
+            ))}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
+</Section>

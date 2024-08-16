@@ -10,16 +10,16 @@
     --color-button-accent: 249, 115, 22;
     --color-button-accent-hover: 55, 55, 55;
     --color-button-muted: 244, 239, 238;
-    [data-theme="blue"] {
-      --color-text-base: 15, 23, 42;
-      --color-text-muted: 100, 116, 139;
-      --color-text-inverted: 240, 240, 240;
-      --color-fill: 203, 213, 225;
-      --muted: 148, 163, 184;
-      --color: 59, 130, 246;
-      --color-button-accent: 59, 130, 246;
-      --color-button-accent-hover: 0, 185, 255;
-      --color-button-muted: 226, 232, 240;
+    [data-theme="purple"] {
+      --color-text-base: 30, 30, 30;  /* Dark Grey for text */
+      --color-text-muted: 100, 100, 100;  /* Light Grey for muted text */
+      --color-text-inverted: 240, 240, 240;  /* White for inverted text */
+      --color-fill: 240, 240, 240;  /* Light Grey for background fill */
+      --muted: 150, 150, 150;  /* Grey for muted elements */
+      --color: 140, 105, 207;  /* Light Purple as general color */
+      --color-button-accent: 140, 105, 207;  /* Light Purple for button accent */
+      --color-button-accent-hover: 120, 85, 195;  /* Slightly darker shade of light purple for button accent hover */
+      --color-button-muted: 226, 232, 240;  /* Light Grey for muted button */
     }
     [data-theme="red"] {
       --color-text-base: 28, 25, 23;
@@ -65,16 +65,16 @@
     --color-button-accent: 227, 77, 10;
     --color-button-accent-hover: 231, 121, 43;
     --color-button-muted: 26, 26, 26;
-    [data-theme="blue"] {
-      --color-text-base: 248, 250, 252;
-      --color-text-muted: 148, 163, 184;
-      --color-text-inverted: 240, 240, 240;
-      --color-fill: 2, 6, 23;
-      --muted: 51, 65, 85;
-      --color: 59, 130, 246;
-      --color-button-accent: 59, 130, 246;
-      --color-button-accent-hover: 0, 185, 255;
-      --color-button-muted: 30, 41, 59;
+    [data-theme="purple"] {
+      --color-text-base: 240, 240, 240;  /* Light Grey for text */
+      --color-text-muted: 190, 190, 190;  /* Lighter Grey for muted text */
+      --color-text-inverted: 30, 30, 30;  /* Dark Grey for inverted text */
+      --color-fill: #050506;  /* Dark Grey for background fill */
+      --muted: 100, 100, 100;  /* Grey for muted elements */
+      --color: 90, 60, 120;  /* Purple for accents */
+      --color-button-accent: 90, 60, 120;  /* Purple for button accent */
+      --color-button-accent-hover: 60, 30, 90;  /* Dark Purple for button accent hover */
+      --color-button-muted: 70, 70, 70;  /* Dark Grey for muted button */
     }
     [data-theme="red"] {
       --color-text-base: 231, 229, 228;

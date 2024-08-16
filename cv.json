@@ -126,7 +126,7 @@
     },
     {
       "name": "CSS",
-      "level": 65,
+      "level": 75,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -135,7 +135,7 @@
     },
     {
       "name": "JavaScript",
-      "level": 75,
+      "level": 85,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -145,7 +145,7 @@
     },
     {
       "name": "Tailwind",
-      "level": 60,
+      "level": 90,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -165,7 +165,7 @@
     },
     {
       "name": "Node",
-      "level": 70,
+      "level": 90,
       "keywords": [
         "Web Development",
         "Backend",
@@ -175,7 +175,7 @@
     },
     {
       "name": "Python",
-      "level": 60,
+      "level": 50,
       "keywords": [
         "Web Development",
         "Backend",
@@ -204,7 +204,7 @@
     },
     {
       "name": "Next.js",
-      "level": 50,
+      "level": 70,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -215,12 +215,42 @@
     },
     {
       "name": "React",
-      "level": 70,
+      "level": 60,
       "keywords": [
         "Web Development",
         "Frontend",
         "JavaScript Library",
         "UI"
+      ]
+    },
+    {
+      "name": "Astro",
+      "level": 80,
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Static Site Generator",
+        "Performance"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": 50,
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "Database",
+        "NoSQL"
+      ]
+
+    },
+    {
+      "name":"AI (LLM)",
+      "level":50,
+      "keywords": [
+      
+        "AI",
+        "Machine Learning"
       ]
     }
   ],

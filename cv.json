@@ -1,192 +1,124 @@
 {
   "basics": {
-    "name": "John Doe",
+    "name": "Tayron März",
     "label": "Junior Full Stack Developer",
     "image": "/me_avatar.jpg",
-    "email": "john.doe@example.com",
-    "phone": "+1 555-555-5555",
-    "url": "https://johndoe.dev",
+    "email": "mailstayron@gmail.com",
+    "url": "https://taymaerz.de",
     "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
-    "theme": "default",
+    "theme": "purple",
     "location": {
       "address": "",
-      "postalCode": "10001",
-      "city": "Auckland",
-      "countryCode": "NZ",
-      "region": "New Zealand"
+      "postalCode": "37083",
+      "city": "Göttingen",
+      "countryCode": "DE",
+      "region": "Germany"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "john-doe",
-        "url": "https://linkedin.com/in/john-doe"
-      },
-      {
-        "network": "X",
-        "username": "john-doe",
-        "url": "https://x.com/john-doe"
+        "username": "tay-märz",
+        "url": "https://www.linkedin.com/in/tay-märz/"
       },
       {
         "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+        "username": "taynotfound",
+        "url": "https://github.com/taynotfound"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
+      "name": "Thiele Bakery",
+      "position": "Cashier",
       "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
-      "endDate": null,
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
-      "highlights": [
-        "Improved website performance by optimizing code"
-      ],
-      "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
-      ],
-      "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
-      ],
+      "location": "Göttingen, Germany",
+      "url": "https://thiele.info",
+      "startDate": "2024-07-15",
+      "endDate": "2025",
+      "summary": "Serving and assisting customers, promoting delicious baked goods, baking and refining products, preparing savory snacks and specialty coffees, and ensuring an attractive presentation of the baked goods.",
+     
       "skills": [
-        "React",
-        "Tailwind",
-        "GitHub"
+        "Social Skills"
       ]
     },
     {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
+      "name": "AGVolution GmbH",
+      "position": "Intern Web & AI Developer",
       "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
+      "location": "Göttingen, Germany",
+      "url": "https://agvolution.com",
+      "startDate": "2023-07-01",
+      "endDate": "2024-06-19",
+      "summary": "Developing a self-hosted AI assistant prototype with expertise in agriculture, as well as contributing to both backend and frontend tasks across various web services.",
       "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
+        "Developed a self-hosted AI assistant prototype with domain expertise in agriculture, leading the project almost entirely independently."
       ],
       "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
+        "Developed a self-hosted AI assistant prototype with domain expertise in agriculture, leading the project almost entirely independently.",
+        "Assisted with backend and frontend development for various web services."
       ],
       "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
+        "Successfully completed the AI assistant prototype, fully equipped with agricultural knowledge, capable of holding steady conversations, and proficient in recommending soil types, product prices, and optimal usage per acre."
       ],
       "skills": [
         "Python",
-        "Django",
-        "SQL",
-        "Git"
-      ]
-    },
-    {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
-      "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
-      "highlights": [
-        "Completed several client projects successfully"
-      ],
-      "skills": [
+        "AI",
         "HTML",
-        "CSS"
+        "Tailwind",
+        "JavaScript",
+        "React"
       ]
     }
+   
   ],
   "volunteer": [
     {
-      "organization": "Local Coding Club",
-      "position": "Volunteer",
-      "url": "https://codingclub.com/",
-      "startDate": "2021-01-01",
-      "endDate": "2022-01-01",
-      "summary": "Helped organize coding workshops and mentored new members.",
+      "organization": "PATHFindr",
+      "position": "Volunteer Moderator",
+      "url": "https://www.pathfindr.at/",
+      "startDate": "2023-02-01",
+      "endDate": null,
+      "summary": "Moderating the PATHFindr community Discord Server, and ensuring a positive and welcoming environment for all members.",
       "highlights": [
-        "Awarded 'Volunteer of the Month'"
+        "Consistently contributed to the community for over a year, approaching two years of dedicated service.",
+        "Helped maintain a positive and inclusive atmosphere for members, fostering community growth and engagement."
       ]
     }
   ],
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
+      "institution": "Berufsbildende Schule II Göttingen",
+      "url": "https://www.bbs2goe.de/",
+      "area": "IT",
+      "studyType": "Fachhochschulreife",
+      "startDate": "2023-08-01",
+      "endDate": "2024-06-30",
+      "score": ">4.0",
       "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
+        
       ]
     },
     {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
-      "studyType": "Master",
-      "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
+      "institution": "Berufsbildende Schule I Northeim",
+      "url": "https://www.bbs1-northeim.de/",
+      "area": "Economics",
+      "studyType": "Realschulabschluss",
+      "startDate": "2021-08-01",
+      "endDate": "2023-06-30",
+      "score": "3.1",
       "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
-    },
-    {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
-      "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
+        
       ]
     }
   ],
   "certificates": [
-    {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
-    }
+   
   ],
   "skills": [
     {
-      "name": "Figma",
-      "level": "Expert",
-      "keywords": [
-        "Design",
-        "UI"
-      ]
-    },
-    {
-      "name": "Gitlab",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
       "name": "HTML",
-      "level": "Intermediate",
+      "level": 70,
       "keywords": [
         "Web Development",
         "Frontend"
@@ -194,7 +126,7 @@
     },
     {
       "name": "CSS",
-      "level": "Intermediate",
+      "level": 65,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -203,7 +135,7 @@
     },
     {
       "name": "JavaScript",
-      "level": "Intermediate",
+      "level": 75,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -213,7 +145,7 @@
     },
     {
       "name": "Tailwind",
-      "level": "Intermediate",
+      "level": 60,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -223,7 +155,7 @@
     },
     {
       "name": "TypeScript",
-      "level": "Intermediate",
+      "level": 65,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -233,7 +165,7 @@
     },
     {
       "name": "Node",
-      "level": "Intermediate",
+      "level": 70,
       "keywords": [
         "Web Development",
         "Backend",
@@ -242,18 +174,18 @@
       ]
     },
     {
-      "name": "MySQL",
-      "level": "Intermediate",
+      "name": "Python",
+      "level": 60,
       "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
+        "Web Development",
+        "Backend",
+        "AI",
+        "Scripting"
       ]
     },
     {
       "name": "Git",
-      "level": "Intermediate",
+      "level": 75,
       "keywords": [
         "Version Control",
         "Collaboration",
@@ -262,7 +194,7 @@
     },
     {
       "name": "GitHub",
-      "level": "Intermediate",
+      "level": 80,
       "keywords": [
         "Version Control",
         "Collaboration",
@@ -272,7 +204,7 @@
     },
     {
       "name": "Next.js",
-      "level": "Beginner",
+      "level": 50,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -283,7 +215,7 @@
     },
     {
       "name": "React",
-      "level": "Intermediate",
+      "level": 70,
       "keywords": [
         "Web Development",
         "Frontend",
@@ -294,12 +226,12 @@
   ],
   "languages": [
     {
-      "language": "English",
+      "language": "German",
       "fluency": "Native speaker"
     },
     {
-      "language": "Spanish",
-      "fluency": "Intermediate"
+      "language": "English",
+      "fluency": "Fluent"
     }
   ],
   "interests": [
@@ -309,56 +241,59 @@
         "AI",
         "Blockchain"
       ]
+    },
+    {
+      "name": "Music",
+      "keywords": [
+        "Guitar",
+        "Piano"
+      ]
     }
   ],
   "references": [
-    {
-      "name": "Jane Smith",
-      "reference": "Reference…"
-    }
+    
   ],
   "projects": [
     {
-      "name": "Personal Portfolio",
-      "isActive": false,
+      "name": "Personal Professional Portfolio",
+      "isActive": true,
       "description": "A personal portfolio website to showcase my projects and skills.",
       "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
+        "Built with React and Tailwind CSS"
       ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
+      "url": "https://taymaerz.de",
+      "github": "https://github.com/taynotfound/profoolio"
     },
     {
-      "name": "Weather App",
+      "name": "Personal Portfolio (Card Style)",
       "isActive": true,
-      "description": "A web application that provides weather information for any location.",
+      "description": "A personal portfolio website with a card-style layout.",
       "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
-        "Responsive design"
+        "Built in Astro",
+        "Includes a blog "
       ],
-      "url": "https://weatherapp.com"
+      "url": "https://taynotfound.xyz"
     },
     {
-      "name": "Task Manager",
+      "name": "WeatherWeb",
       "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
+      "description": "Autistic Friendly & AI Powered Weather Web App without any bullshit ",
       "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
+        "Autistic Friendly",
+        "AI Powered"
       ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
+      "url": "https://weather.taynotfound.xyz/",
+      "github": "https://github.com/taynotfound/WeatherWeb"
     },
     {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
+      "name": "Recimaster",
+      "isActive": true,
+      "description": "Recipes without any Bullshit & AI powered Instructions. Just you and your Food ",
       "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
+        "AI Powered",
+        "No Bullshit"
       ],
-      "url": "https://ecommerce.com"
+      "url": "https://github.com/taynotfound/recimaster"
     }
   ]
 }

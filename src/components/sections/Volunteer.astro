@@ -1,0 +1,54 @@
+---
+import Section from "../Section.astro";
+import { volunteer } from "@cv";
+---
+
+<Section title="Volunteer Experience" class="print:hidden">
+  <ul class="flex flex-col gap-2">
+    {
+      volunteer.map(({ organization, position, startDate, endDate, summary, highlights, url }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = endDate ? new Date(endDate).getFullYear() : "Present";
+
+        return (
+          <li>
+            <article>
+              <header class="flex flex-row justify-between items-start">
+                <div class="flex-1">
+                  <h3 class="font-semibold text-skin-base">
+                    {position}
+                    <span class="font-normal text-skin-muted">
+                      {" at "}
+                      {url ? (
+                        <a
+                          href={url}
+                          target="_blank"
+                          class="text-skin-hue hover:underline"
+                        >
+                          {organization}
+                        </a>
+                      ) : (
+                        organization
+                      )}
+                    </span>
+                  </h3>
+                </div>
+                <time class="text-sm text-skin-muted shrink-0">
+                  {startYear} - {endYear}
+                </time>
+              </header>
+              <p class="mt-1 text-skin-muted text-sm">{summary}</p>
+              {highlights && highlights.length > 0 && (
+                <ul class="mt-1 list-disc pl-4 text-sm">
+                  {highlights.map((highlight) => (
+                    <li class="text-skin-muted">{highlight}</li>
+                  ))}
+                </ul>
+              )}
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>

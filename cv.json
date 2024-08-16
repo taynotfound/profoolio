@@ -239,14 +239,16 @@
       "name": "Technology",
       "keywords": [
         "AI",
-        "Blockchain"
+        "Websites",
+        "Web Development",
+        "Automation"
       ]
     },
     {
       "name": "Music",
       "keywords": [
-        "Guitar",
-        "Piano"
+        "Radio Moderation",
+        "Listening to Music"
       ]
     }
   ],
@@ -293,7 +295,8 @@
         "AI Powered",
         "No Bullshit"
       ],
-      "url": "https://github.com/taynotfound/recimaster"
+      "url":"https://recimaster.taynotfound.xyz/",
+      "github": "https://github.com/taynotfound/recimaster"
     }
   ]
 }

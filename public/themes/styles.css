@@ -1,0 +1,116 @@
+/*
+    * Progress bar
+*/
+
+@keyframes animateWidth {
+  0% {
+    width: 0; /* Start from 0 width */
+  }
+  100% {
+    width: var(--progress-width); /* Animate to the specific width */
+  }
+}
+
+
+.progressbar {
+        width: var(--progress-width); /* Use a CSS variable for dynamic width */
+        animation: animateWidth 2s ease-out forwards; /* Change 'linear' to 'ease-out' */
+}
+
+/* 
+    * Picture Animations
+*/
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+
+/* 
+    * Interests Animation
+*/
+
+
+
+@keyframes animateHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animateHover:hover {
+  animation: animateHover 1s ease-out;
+}
+
+
+
+/* 
+   * Experience Animation
+*/
+
+@keyframes animateExperience {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animateExperience {
+  animation: animateExperience 1s ease-out;
+}
+
+
+/* 
+    * Miscellaneous Animations
+*/
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes rollInAndSlide {
+  0% {
+    transform: rotate(0) translateX(-100%);
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotate(360deg) translateX(0);
+
+  }
+}
+
+.rollInAndSlide {
+  animation: rollInAndSlide 1s ease-out;
+}

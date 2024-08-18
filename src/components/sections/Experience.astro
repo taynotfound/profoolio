@@ -49,7 +49,7 @@ const SKILLS_ICONS: Record<string, any> = {
       const endYear = endDate != null ? new Date(endDate).getFullYear() : "Present"
 
       return (
-        <li class="relative print:py-2">
+        <li class="relative print:py-2 animateExperience">
           <div class="group relative grid pb-1 print:pb-0 transition-all print:grid-cols-1 print:gap-1 sm:grid-cols-12 sm:gap-8 md:gap-6 lg:hover:!opacity-100 ">
             <header class="relative mt-1 text-xs font-semibold sm:col-span-2">
               <time datetime={startDate} data-title={startDate}>{startYear}</time> - <time datetime={endDate} data-title={endDate}>{endYear}</time>
@@ -142,6 +142,7 @@ const SKILLS_ICONS: Record<string, any> = {
             </div>
         </div>
         </li>
+       
       )
     })}
   </ul>  

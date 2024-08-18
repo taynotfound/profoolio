@@ -21,7 +21,7 @@ import Gitlab from "@/icons/Gitlab.astro";
 import Python from "@/icons/python.astro"
 import AI from "@/icons/ai.astro";
 import MongoDB from "@/icons/mongodb.astro";
-
+import AstroJS from "@/icons/astro.astro";
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
   CSS,
@@ -42,11 +42,12 @@ const SKILLS_ICONS: Record<string, any> = {
   Gitlab,
   Python,
   AI,
-  MongoDB
+  MongoDB,
+  AstroJS
 };
 
 function getProgressWidth(level: number) {
-  return `width: ${level}%;`;
+  return `${level}%`;
 }
 ---
 
@@ -67,7 +68,7 @@ function getProgressWidth(level: number) {
             <span class="text-xs text-skin-muted">{percentage}%</span>
           </div>
           <div class="w-full bg-skin-muted rounded-full h-1.5 mt-1">
-            <div class="bg-skin-hue h-1.5 rounded-full" style={getProgressWidth(percentage)}></div>
+            <div class="bg-skin-hue h-1.5 rounded-full transition-all duration-500 cursor-progress progressbar" style={`--progress-width: ${getProgressWidth(percentage)}`}></div>
           </div>
         </li>
       );

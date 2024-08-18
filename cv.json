@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Tayron (Tay) März",
+    "name": "Tay März",
     "label": "Junior Full Stack Developer",
     "image": "/me_avatar.jpg",
     "email": "mailstayron@gmail.com",
@@ -68,6 +68,31 @@
         "Tailwind",
         "JavaScript",
         "React"
+      ]
+    },
+    {
+      "name":"EasySystems",
+      "position":"Developer",
+      "location_type": "Remote",
+      "location":"Germany",
+      "url":"https://easysystems.live",
+      "startDate":"2022",
+      "endDate": null,
+      "summary":"Contributing to the development of the EasySystems Discord bot family.",
+      "highlights":[
+        "Developed Bots such as; EasyYAUDAB and EasyLevel",
+        "Started working with AI and Machine Learning"
+      ],
+      "skills":[
+        "Node",
+        "JavaScript",
+        "AI"
+      ],
+      "responsibilities":[
+        "Developing and maintaining the EasyLevel bot, a leveling bot for Discord servers."
+      ],
+      "achievements":[
+        "Developed the EasyYAUDAB bot, a AI powered Discord bot that can answer questions and provide information on various topics."
       ]
     }
    
@@ -224,7 +249,7 @@
       ]
     },
     {
-      "name": "Astro",
+      "name": "AstroJS",
       "level": 80,
       "keywords": [
         "Web Development",
@@ -245,7 +270,7 @@
 
     },
     {
-      "name":"AI (LLM)",
+      "name":"AI",
       "level":50,
       "keywords": [
       

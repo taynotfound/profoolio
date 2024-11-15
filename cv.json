@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Tay März",
-    "label": "Junior Full Stack Developer",
+    "label": "Junior Full Stack Developer - Apprentice",
     "image": "/me_avatar.jpg",
     "email": "mailstayron@gmail.com",
     "url": "https://taymaerz.de",
@@ -29,13 +29,38 @@
   },
   "work": [
     {
+      "name": "Greenmark IT GmbH",
+      "position": "Junior Development Apprentice",
+      "location_type": "Remote",
+      "location": "Alfeld, Germany",
+      "url": "https://greenmark.it",
+      "startDate": "2024-11-01",
+      "endDate": null,
+      "summary": "Developing and maintaining web applications, as well as contributing to the development of new features and services.",
+      "highlights": [
+       
+      ],
+      "responsibilities": [
+        "Developing and maintaining web applications, including the company's main website and various internal tools.",
+        "Contributing to the development of new features and services, including a new customer portal and a new internal tool for managing customer data."
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "PHP",
+        "JavaScript",
+        "Bootstrap",
+        "MySQL"
+      ]
+    },
+    {
       "name": "Thiele Bakery",
       "position": "Cashier",
       "location_type": "On site",
       "location": "Göttingen, Germany",
       "url": "https://thiele.info",
       "startDate": "2024-07-15",
-      "endDate": null,
+      "endDate": "2024-11-01",
       "summary": "Serving and assisting customers, promoting delicious baked goods, baking and refining products, preparing savory snacks and specialty coffees, and ensuring an attractive presentation of the baked goods.",
      
       "skills": [
@@ -67,7 +92,8 @@
         "HTML",
         "Tailwind",
         "JavaScript",
-        "React"
+        "React",
+        "PHP"
       ]
     },
     {
@@ -277,6 +303,16 @@
         "AI",
         "Machine Learning"
       ]
+    },
+    {
+      "name":"PHP",
+      "level":70,
+      "keywords": [
+      
+        "Web Development",
+        "Backend",
+        "Scripting"
+      ]
     }
   ],
   "languages": [
@@ -311,6 +347,19 @@
     
   ],
   "projects": [
+    {
+      "name": "Briefly",
+      "isActive": true,
+      "description": "[WIP] A simple and minimalistic news reader with a focus on readability and AI.",
+      "highlights": [
+        "AI Summarization",
+        "No Ads etc",
+        "Built with PHP and Tailwind CSS",
+        "Comments and User Accounts"
+      ],
+      "url": "https://taymaerz.de",
+      "github": "https://github.com/taynotfound/profoolio"
+    },
     {
       "name": "Personal Professional Portfolio",
       "isActive": true,

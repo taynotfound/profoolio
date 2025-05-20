@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tay März | Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="/main.css">
+  <script defer src="/main.js"></script>
+  <meta name="theme-color" content="#7c3aed">
+  <!-- SEO: Add meta tags, Open Graph, Twitter Card, and JSON-LD structured data -->
+  <meta name="description" content="Tay März – Developer Portfolio. Linux, web, and AI enthusiast. Projects, skills, and contact.">
+  <meta name="author" content="Tay März">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://taymaerz.de/">
+  <meta property="og:title" content="Tay März | Portfolio">
+  <meta property="og:description" content="Tay März – Developer Portfolio. Linux, web, and AI enthusiast. Projects, skills, and contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taymaerz.de/">
+  <meta property="og:image" content="https://taymaerz.de/photo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tay März | Portfolio">
+  <meta name="twitter:description" content="Tay März – Developer Portfolio. Linux, web, and AI enthusiast. Projects, skills, and contact.">
+  <meta name="twitter:image" content="https://taymaerz.de/photo.jpg">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tay März",
+      "url": "https://taymaerz.de/",
+      "image": "https://taymaerz.de/photo.jpg",
+      "sameAs": [
+        "https://github.com/taynotfound"
+      ],
+      "jobTitle": "Developer & Linux Enthusiast",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Greenmark IT GmbH"
+      }
+    }
+  </script>
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes glow {
+      0%, 100% { filter: brightness(1); }
+      50% { filter: brightness(1.2); }
+    }
+    @keyframes gradient-shift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes subtle-pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.02); opacity: 0.7; }
+    }
+    @keyframes rotate-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-glow { animation: glow 2s ease-in-out infinite; }
+    .hover-lift { transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+    .hover-lift:hover { transform: translateY(-2px); }
+    .typewriter::after { display: none; }
+    .bg-gradient-animate {
+      background-size: 200% 200%;
+      animation: gradient-shift 15s ease infinite;
+    }
+    .album-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #2d1a4d, #7c3aed);
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .album-placeholder::before {
+      content: '';
+      position: absolute;
+      width: 150%;
+      height: 150%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      animation: rotate-slow 20s linear infinite;
+    }
+    .album-placeholder::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.1) 50%, transparent 55%);
+      animation: subtle-pulse 3s ease-in-out infinite;
+    }
+    .album-note {
+      width: 2px;
+      height: 20px;
+      background: rgba(255,255,255,0.3);
+      position: relative;
+      margin: 0 2px;
+    }
+    .album-note::before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      top: -4px;
+      left: -3px;
+    }
+    .album-note:nth-child(2) { height: 16px; }
+    .album-note:nth-child(3) { height: 24px; }
+    .album-note:nth-child(4) { height: 18px; }
+    .album-note:nth-child(5) { height: 22px; }
+    .interactive-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+    .interactive-hover:hover {
+      transform: translateY(-2px) scale(1.02);
+      filter: brightness(1.1);
+    }
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #7c3aed;
+      transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .skill-badge {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+    .skill-badge:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+    .project-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .project-btn:hover {
+      transform: translateY(-2px);
+    }
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[#181824] to-[#2d1a4d] text-white min-h-screen transition-colors duration-500 bg-gradient-animate">
+  <div id="particles-js"></div>
+  <div class="content-wrapper">
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Scroll to top" style="display:none;">
+      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+    <nav id="navbar" class="w-full flex justify-between items-center px-6 py-4 bg-transparent fixed top-0 left-0 z-30 transition-all duration-300">
+      <div class="text-2xl font-bold tracking-tight text-purple-400 hover:text-purple-300 transition-colors">Tay März</div>
+      <div class="flex items-center gap-6">
+        <a href="#about" class="nav-link hover-lift">About</a>
+        <a href="#skills" class="nav-link hover-lift">Skills</a>
+        <a href="#experience" class="nav-link hover-lift">Experience</a>
+        <a href="#projects" class="nav-link hover-lift">Projects</a>
+      </div>
+    </nav>
+    <main class="max-w-5xl mx-auto px-4 pt-40">
+      <!-- Hero/About/Last.fm Combined Section -->
+      <section id="hero" class="flex flex-col md:flex-row items-center gap-12 mb-24 animate-hero-reveal">
+        <img src="/photo.jpg" alt="Tay März" class="w-44 h-44 rounded-full object-cover border-4 border-purple-600 shadow-lg hero-img animate-float">
+        <div class="flex-1 flex flex-col gap-4">
+          <h1 class="text-5xl font-extrabold text-purple-300 mb-1 animate-fade-in">Tay März</h1>
+          <h2 class="typewriter mb-2 animate-fade-in-up text-purple-400 text-2xl">Developer & Linux Enthusiast</h2>
+          <p class="text-lg text-gray-200 mb-2 animate-fade-in-up">I'm a passionate developer from Germany, dedicated to building beautiful, accessible, and modern web experiences. My journey has taken me through AI prototyping, internships, and real-world projects for communities and businesses. I thrive on learning new technologies, collaborating with others, and turning ideas into reality. Always curious, always shipping. If you're a fellow tech enthusiast or looking for a creative collaborator, let's connect and build something amazing together!</p>
+          <div class="flex gap-3 mt-2 animate-fade-in-up">
+            <button id="open-contact" class="btn-primary hover:scale-105 transition-transform">Contact Me</button>
+            <a href="#projects" class="btn-secondary hover:scale-105 transition-transform">See Projects</a>
+          </div>
+          <div class="mt-6 animate-fade-in-up">
+            <div class="lastfm-widget" id="lastfm-widget">
+              <div class="lastfm-art-container">
+                <img id="lastfm-art" src="/placeholder-album.png" alt="Album Art" class="lastfm-art hover:scale-105 transition-transform" style="display: none;">
+                <div class="album-placeholder" id="album-placeholder">
+                  <div class="album-note"></div>
+                  <div class="album-note"></div>
+                  <div class="album-note"></div>
+                  <div class="album-note"></div>
+                  <div class="album-note"></div>
+                </div>
+              </div>
+              <div class="lastfm-info">
+                <div id="lastfm-track" class="lastfm-track hover:text-purple-300 transition-colors">Loading...</div>
+                <div id="lastfm-artist" class="lastfm-artist hover:text-purple-300 transition-colors"></div>
+                <div id="lastfm-album" class="lastfm-album hover:text-purple-300 transition-colors"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="mb-20 animate-fade-in-up">
+        <h3 class="section-title">Skills & Tech</h3>
+        <div class="flex flex-wrap gap-4 mt-4">
+          <div class="skill-badge floating-skill glow-orange bg-orange-500/10 hover:bg-orange-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-7 h-7">HTML</div>
+          <div class="skill-badge floating-skill glow-blue bg-blue-500/10 hover:bg-blue-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-7 h-7">CSS</div>
+          <div class="skill-badge floating-skill glow-yellow bg-yellow-500/10 hover:bg-yellow-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-7 h-7">JavaScript</div>
+          <div class="skill-badge floating-skill glow-blue bg-blue-500/10 hover:bg-blue-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-7 h-7">TypeScript</div>
+          <div class="skill-badge floating-skill glow-blue bg-blue-500/10 hover:bg-blue-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-7 h-7">React</div>
+          <div class="skill-badge floating-skill skill-chip bg-gray-500/10 hover:bg-gray-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" class="w-7 h-7">Next.js</div>
+          <div class="skill-badge floating-skill glow-purple bg-purple-500/10 hover:bg-purple-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg" alt="Astro" class="w-7 h-7">Astro</div>
+          <div class="skill-badge floating-skill glow-blue bg-blue-500/10 hover:bg-blue-500/20 interactive-hover"><img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="Tailwind" class="w-7 h-7">Tailwind</div>
+          <div class="skill-badge floating-skill glow-yellow bg-yellow-500/10 hover:bg-yellow-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-7 h-7">Python</div>
+          <div class="skill-badge floating-skill glow-blue bg-blue-500/10 hover:bg-blue-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-7 h-7">PHP</div>
+          <div class="skill-badge floating-skill glow-green bg-green-500/10 hover:bg-green-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-7 h-7">MongoDB</div>
+          <div class="skill-badge floating-skill skill-chip bg-gray-500/10 hover:bg-gray-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="w-7 h-7">Linux</div>
+          <div class="skill-badge floating-skill skill-chip bg-gray-500/10 hover:bg-gray-500/20 interactive-hover"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" class="w-7 h-7">Bash</div>
+        </div>
+      </section>
+      <!-- Experience -->
+      <section id="experience" class="mb-20 animate-fade-in-up">
+        <h3 class="section-title">Experience</h3>
+        <div class="timeline mt-6">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="font-bold text-purple-200">2024 - 2025 &bull; Greenmark IT GmbH </div>
+              <div class="text-sm text-purple-400 mb-1">Junior Development Apprentice, Alfeld (On site)</div>
+              <div class="text-gray-200">Developed and maintained web applications, contributed to new features and internal tools, and supported the launch of a customer portal and data management system.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="font-bold text-purple-200">2024 &bull; Thiele Bakery</div>
+              <div class="text-sm text-purple-400 mb-1">Cashier, Göttingen (On site)</div>
+              <div class="text-gray-200">Provided friendly customer service, prepared baked goods and snacks, and ensured a welcoming store atmosphere.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="font-bold text-purple-200">2023 - 2024 &bull; AGVolution GmbH</div>
+              <div class="text-sm text-purple-400 mb-1">Intern Web & AI Developer, Göttingen (Hybrid)</div>
+              <div class="text-gray-200">Independently developed a self-hosted AI assistant for agriculture, and contributed to backend and frontend web projects.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="font-bold text-purple-200">2022 - Present &bull; EasySystems <span class="exp-present">Present</span></div>
+              <div class="text-sm text-purple-400 mb-1">Developer, Germany (Remote)</div>
+              <div class="text-gray-200">Develop and maintain Discord bots, including an AI-powered assistant and a leveling system for communities.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Volunteer Experience -->
+      <section id="volunteer" class="volunteer-section animate-fade-in-up">
+        <h3 class="section-title">Volunteer Experience</h3>
+        <div class="timeline mt-6">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="font-bold text-purple-200">2023 - <span class="exp-present">Present</span> &bull; PATHFindr</div>
+              <div class="text-sm text-purple-400 mb-1">Volunteer Moderator, Discord</div>
+              <div class="text-gray-200">Moderating the PATHFindr community Discord Server, and ensuring a positive and welcoming environment for all members.</div>
+              <ul class="mt-2 text-purple-200 list-disc list-inside text-sm">
+                <li>Consistently contributed to the community for over a year, approaching two years of dedicated service.</li>
+                <li>Helped maintain a positive and inclusive atmosphere for members, fostering community growth and engagement.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects" class="mb-20 animate-fade-in-up">
+        <h3 class="section-title">Projects</h3>
+        <div class="grid md:grid-cols-2 gap-8 mt-6">
+          <div class="project-card interactive-hover">
+            <img src="/screenshots/weatherweb-1.png" alt="WeatherWeb Screenshot" class="project-img">
+            <div class="project-overlay">
+              <a href="https://weather.taymaerz.de" target="_blank" class="project-btn bg-purple-600 hover:bg-purple-500">View Project</a>
+              <a href="https://github.com/taynotfound/weatherweb" target="_blank" class="project-btn bg-gray-800 hover:bg-gray-700">GitHub</a>
+            </div>
+            <div class="project-content">
+              <div class="font-bold text-purple-200">WeatherWeb</div>
+              <div class="text-gray-200 text-sm mb-2">Autistic Friendly & AI Powered Weather Web App without any bullshit.</div>
+            </div>
+          </div>
+          <div class="project-card interactive-hover">
+            <img src="/screenshots/recimaster-1.png" alt="Recimaster Screenshot" class="project-img">
+            <div class="project-overlay">
+              <a href="https://recipe.taymaerz.de" target="_blank" class="project-btn bg-purple-600 hover:bg-purple-500">View Project</a>
+              <a href="https://github.com/taynotfound/recimaster" target="_blank" class="project-btn bg-gray-800 hover:bg-gray-700">GitHub</a>
+            </div>
+            <div class="project-content">
+              <div class="font-bold text-purple-200">Recimaster</div>
+              <div class="text-gray-200 text-sm mb-2">Recipes without any Bullshit & AI powered Instructions. Just you and your Food.</div>
+            </div>
+          </div>
+          <div class="project-card interactive-hover">
+            <img src="/screenshots/nexus-search-1.png" alt="Nexus Search Screenshot" class="project-img">
+            <div class="project-overlay">
+              <a href="https://search.taymaerz.de" target="_blank" class="project-btn bg-purple-600 hover:bg-purple-500">View Project</a>
+              <a href="https://github.com/taynotfound/nexus-search" target="_blank" class="project-btn bg-gray-800 hover:bg-gray-700">GitHub</a>
+            </div>
+            <div class="project-content">
+              <div class="font-bold text-purple-200">Nexus Search</div>
+              <div class="text-gray-200 text-sm mb-2">A modern, privacy-focused search engine interface powered by multiple search APIs.</div>
+            </div>
+          </div>
+          <div class="project-card interactive-hover">
+            <img src="/screenshots/myradio-1.png" alt="MyRadio Screenshot" class="project-img">
+            <div class="project-overlay">
+              <a href="https://myradio.taymaerz.de" target="_blank" class="project-btn bg-purple-600 hover:bg-purple-500">View Project</a>
+              <a href="#" class="project-btn bg-gray-800 hover:bg-gray-700 opacity-50 cursor-not-allowed">GitHub</a>
+            </div>
+            <div class="project-content">
+              <div class="font-bold text-purple-200">MyRadio</div>
+              <div class="text-gray-200 text-sm mb-2">A web-based radio station with curated playlists and song requests.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Modal -->
+      <div id="contact-modal" class="contact-modal hidden" role="dialog" aria-modal="true" aria-labelledby="contact-title" tabindex="-1">
+        <div class="glass contact-glass p-8 rounded-3xl relative animate-modal-in" tabindex="0">
+          <span class="close-modal absolute top-3 right-6 text-3xl cursor-pointer" tabindex="0" aria-label="Close contact form">&times;</span>
+          <div class="absolute inset-0 z-0 pointer-events-none">
+            <canvas id="contact-sparkles" class="w-full h-full absolute top-0 left-0"></canvas>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <svg class="w-9 h-9 text-purple-300 animate-envelope" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg>
+            <h3 id="contact-title" class="text-3xl font-extrabold text-purple-200 tracking-tight">Contact</h3>
+          </div>
+          <form id="contact-form" class="flex flex-col gap-3 min-w-[260px] relative z-10" method="POST" action="/api/contact" autocomplete="on" aria-label="Contact form">
+            <label for="contact-name" class="sr-only">Name</label>
+            <input id="contact-name" type="text" name="name" placeholder="Your Name" required class="input contact-input" aria-required="true" autocomplete="name">
+            <label for="contact-email" class="sr-only">Email</label>
+            <input id="contact-email" type="email" name="email" placeholder="Your Email" required class="input contact-input" aria-required="true" autocomplete="email">
+            <label for="contact-message" class="sr-only">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Your Message" required class="input contact-input" aria-required="true" rows="4"></textarea>
+            <button type="submit" class="btn-primary contact-send flex items-center justify-center gap-2" aria-label="Send message">
+              <span class="send-text">Send</span>
+              <svg class="w-5 h-5 send-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div id="contact-status" class="text-xs mt-1 h-5 flex items-center gap-2"></div>
+          </form>
+          <div class="mt-4 text-sm flex flex-col gap-1 z-10 relative">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-purple-400 animate-discord" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.369A19.791 19.791 0 0 0 16.885 3.1a.117.117 0 0 0-.124.06c-.543.96-1.146 2.217-1.573 3.201a18.726 18.726 0 0 0-5.518 0c-.427-.984-1.03-2.24-1.573-3.201a.117.117 0 0 0-.124-.06A19.736 19.736 0 0 0 3.683 4.369a.105.105 0 0 0-.047.043C.533 9.043-.32 13.579.099 18.057a.12.12 0 0 0 .045.083c2.053 1.507 4.042 2.422 5.992 3.029a.116.116 0 0 0 .127-.043c.462-.63.874-1.295 1.226-1.994a.112.112 0 0 0-.062-.155c-.652-.247-1.272-.549-1.872-.892a.117.117 0 0 1-.012-.195c.126-.094.252-.192.372-.291a.112.112 0 0 1 .117-.01c3.927 1.793 8.18 1.793 12.061 0a.112.112 0 0 1 .118.009c.12.099.246.197.372.291a.117.117 0 0 1-.011.195c-.6.343-1.22.645-1.873.892a.112.112 0 0 0-.061.156c.36.698.773 1.362 1.225 1.993a.115.115 0 0 0 .127.044c1.95-.607 3.939-1.522 5.992-3.029a.115.115 0 0 0 .045-.083c.5-5.177-.838-9.673-3.234-13.645a.104.104 0 0 0-.047-.043ZM8.02 15.331c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.094 2.156 2.418 0 1.334-.955 2.419-2.156 2.419Zm7.974 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.174 1.094 2.156 2.418 0 1.334-.946 2.419-2.156 2.419Z"/></svg>
+              <span>Discord: <span class="font-mono bg-purple-900/60 px-2 py-1 rounded">notfound.sh</span></span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-purple-400 animate-mail" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg>
+              <a href="mailto:hi@taymaerz.de" class="text-purple-300 underline">hi@taymaerz.de</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="w-full text-center py-8 text-xs text-gray-400">
+      <div class="mb-2">
+        <a href="/impressum" class="underline hover:text-purple-300">Impressum (DE)</a> |
+        <a href="/impressum-en" class="underline hover:text-purple-300">Impressum (EN)</a>
+      </div>
+      &copy; 2025 Tay März &bull; <a href="https://github.com/taynotfound" class="underline hover:text-purple-300">GitHub</a>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 40, density: { enable: true, value_area: 800 } },
+        color: { value: '#7c3aed' },
+        shape: { type: 'circle' },
+        opacity: {
+          value: 0.3,
+          random: true,
+          anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#7c3aed',
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: 'none',
+          random: true,
+          straight: false,
+          out_mode: 'out',
+          bounce: false,
+          attract: { enable: true, rotateX: 600, rotateY: 1200 }
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: { enable: true, mode: 'grab' },
+          onclick: { enable: true, mode: 'push' },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 140, line_linked: { opacity: 0.5 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html> 

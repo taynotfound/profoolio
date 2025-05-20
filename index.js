@@ -27,8 +27,8 @@ app.get('/impressum-en', (req, res) => {
 // Last.fm API proxy
 app.get('/api/lastfm', async (req, res) => {
   try {
-    const apiKey = '662241a769c0ce785130c58c02514922';
-    const user = 'tayron531';
+    const apiKey = process.env.LASTFM_API_KEY; // Replace with your Last.fm API key
+    const user = process.env.LASTFM_USER; // Replace with your Last.fm username
     const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${user}&api_key=${apiKey}&format=json&limit=1`;
     const response = await axios.get(url);
     const data = response.data;

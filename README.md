@@ -40,6 +40,7 @@ A modern, responsive portfolio website showcasing my work, skills, and experienc
 
 - Node.js (v14 or higher)
 - npm or yarn
+- Vercel CLI (for deployment)
 
 ### Installation
 
@@ -65,6 +66,34 @@ A modern, responsive portfolio website showcasing my work, skills, and experienc
    ```
 
 5. Open `http://localhost:3000` in your browser
+
+### Deployment with Vercel
+
+1. Install Vercel CLI:
+   ```bash
+   npm i -g vercel
+   ```
+
+2. Login to Vercel:
+   ```bash
+   vercel login
+   ```
+
+3. Add your environment variables in the Vercel dashboard:
+   - Go to your project settings
+   - Add `LASTFM_API_KEY` with your Last.fm API key
+
+4. Deploy:
+   ```bash
+   vercel
+   ```
+
+   For production deployment:
+   ```bash
+   vercel --prod
+   ```
+
+5. Your site will be live at `https://your-project-name.vercel.app`
 
 ## 📁 Project Structure
 

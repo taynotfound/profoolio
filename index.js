@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const { error } = require('console');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 2050;
 
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));

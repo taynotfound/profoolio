@@ -466,4 +466,53 @@ if (bars) {
     bar.style.animationDelay = `${i*0.13 + Math.random()*0.1}s`;
     bars.appendChild(bar);
   }
+}
+
+// Scroll to top functionality
+const scrollToTopBtn = document.getElementById('scrollToTop');
+if (scrollToTopBtn) {
+  let isScrolling = false;
+  
+  // Throttle scroll events for performance
+  function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+      const args = arguments;
+      const context = this;
+      if (!inThrottle) {
+        func.apply(context, args);
+        inThrottle = true;
+        setTimeout(() => inThrottle = false, limit);
+      }
+    }
+  }
+  
+  // Show/hide button based on scroll position
+  const toggleScrollButton = throttle(() => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.style.display = 'flex';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  }, 100);
+  
+  // Smooth scroll to top
+  function scrollToTop() {
+    isScrolling = true;
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    // Reset flag after scroll completes
+    setTimeout(() => {
+      isScrolling = false;
+    }, 1000);
+  }
+  
+  // Add event listeners
+  window.addEventListener('scroll', toggleScrollButton);
+  scrollToTopBtn.addEventListener('click', scrollToTop);
+  
+  // Initialize button state
+  toggleScrollButton();
 } 
